@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header - App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="app-header" class="bg-warning text-white fixed-top py-3">
+        <div class="header-container">
+            <div class="nav-center">
+                <nav class="container d-flex justify-content-center">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#work">Work</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="document/ClaireLiu_Resume.pdf" download class="download-icon">
+                <img src="icons/resume.png" alt="Download Resume" width="50" height="50">
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <!-- Front Page Section -->
+    <section id="front-page" class="d-flex flex-column align-items-center justify-content-center">
+        <h1 class="my-name">CLAIRE LIU</h1>
+        <div>
+            <p class="about-text">
+                Welcome to my page! I'm Claire, and I'm passionate about designing functional and beautiful website.
+                Here, you’ll find more information about me and the work I do.
+            </p>
+            <button class="explore-btn" onclick="window.location.href='#work'">
+                EXPLORE MY WORK!
+            </button>
+        </div>
+    </section>
+
+    <main class="container mt-5 pt-5">
+        <section id="home" class="my-5">
+            <h2 class="text-center">Home</h2>
+            <p>Welcome to the Home section. This is a placeholder text.</p>
+        </section>
+
+        <section id="about" class="my-5">
+            <h2 class="text-center">About</h2>
+            <p>This section is about us. You can add more information here.</p>
+        </section>
+
+        <section id="services" class="my-5">
+            <h2 class="text-center">Services</h2>
+            <p>Here’s where you describe your services.</p>
+        </section>
+
+        <section id="contact" class="my-5">
+            <h2 class="text-center">Contact</h2>
+            <p>Provide contact details or a contact form here.</p>
+        </section>
+    </main>
+
+    <footer>
+        <section class="subscribe">
+            <div class="email-container">
+                <h3>Subscribe to our newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" name="email" id="email" placeholder="Email address">
+                    <button class="email-btn" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
